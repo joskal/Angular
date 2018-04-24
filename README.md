@@ -18,3 +18,13 @@ npm cache verify
 # if npm version is < 5 then use `npm cache clean`
 npm install -g @angular/cli@latest
 ```
+Si nos reporta algún error quizá debamos actualizar también **npm** (ver [doc. oficial](https://docs.npmjs.com/getting-started/fixing-npm-permissions) )
+```bash
+# imprimir versión de npm
+npm -v
+npm install npm@latest -g
+```
+También haremos uso del framwork [ionic](https://ionicframework.com/) para desarrollar apps móviles.
+```bash
+npm install -g ionic
+```
