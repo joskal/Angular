@@ -24,7 +24,7 @@ Si nos reporta algún error quizá debamos actualizar también **npm** (ver [doc
 npm -v
 npm install npm@latest -g
 ```
-También haremos uso del framwork [ionic](https://ionicframework.com/) para desarrollar apps móviles.
+También haremos uso del framework [ionic](https://ionicframework.com/).
 ```bash
 npm install -g ionic
 ```
