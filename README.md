@@ -42,6 +42,6 @@ tsc app1.ts -w
 En caso de que queramos compilar todos archivos **.ts** del directorio actual:
 ```bash
 tsc -init
-#nos generará un archivo json
+#nos generará el archivo tsconfig.json
 ```
-Pero una vez que tengamos el archivo **json**, la siguiente vez que entremos en nuestro proyecto solo tendremos que escribir **tsc** y se pondrá en modo observador para todos los archivos **ts**.
+Una vez que tengamos el archivo **json**, solo tendremos que escribir **tsc** y se pondrá en modo observador para todos los archivos **ts**.
