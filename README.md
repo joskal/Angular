@@ -45,3 +45,8 @@ tsc -init
 #nos generará el archivo tsconfig.json
 ```
 Una vez que tengamos el archivo **json**, solo tendremos que escribir **tsc** y compilará todos los archivos **ts**.
+
+También podemos usar el modo observador para compilar todos los archivos **.ts** a medida que se vayan grabando.
+```bash
+tsc -w
+```
