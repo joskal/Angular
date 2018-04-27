@@ -29,8 +29,18 @@ También haremos uso del framework [ionic](https://ionicframework.com/).
 npm install -g ionic
 ```
 ## Typescript
-Typescript se encarga de compilar archivos con la extensión **.ts** dando como resultado archivos javascript con la extensión **.js** .
+Typescript se encarga de compilar un archivo con la extensión **.ts** dando como resultado un archivo javascript con la extensión **.js** .
 ```bash
 tsc app1.ts
 #resultado: app1.js
+```
+Podemos pedirle a typescript que compile automáticamente el archivo que estamos editando cada que grabemos los cambios, para así evitar tener que escribir la misma sentencia continuamente.
+```bash
+#Compilar en modo observador (watching)
+tsc app1.ts -w
+```
+En caso de que queramos compilar todos archivos **.ts** del directorio actual:
+```bash
+tsc -init
+#nos generará un archivo json
 ```
