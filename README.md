@@ -39,9 +39,9 @@ Podemos pedirle a typescript que compile automáticamente el archivo que estamos
 #Compilar en modo observador (watching)
 tsc app1.ts -w
 ```
-En caso de que queramos compilar todos archivos **.ts** del directorio actual:
+Podemos compilar todos archivos **.ts** del directorio actual:
 ```bash
 tsc -init
 #nos generará el archivo tsconfig.json
 ```
-Una vez que tengamos el archivo **json**, solo tendremos que escribir **tsc** y se pondrá en modo observador para todos los archivos **ts**.
+Una vez que tengamos el archivo **json**, solo tendremos que escribir **tsc** y compilará todos los archivos **ts**.
