@@ -44,3 +44,4 @@ En caso de que queramos compilar todos archivos **.ts** del directorio actual:
 tsc -init
 #nos generará un archivo json
 ```
+Pero una vez que tengamos el archivo **json**, la siguiente vez que entremos en nuestro proyecto solo tendremos que escribir **tsc** y se pondrá en modo observador para todos los archivos **ts**.
