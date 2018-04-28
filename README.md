@@ -50,3 +50,6 @@ También podemos usar el modo observador para compilar todos los archivos **.ts*
 ```bash
 tsc -w
 ```
+
+## let & const
+**let variable** declara una variable a nivel de bloque **{}**. Si construimos un bloque anidado y volvemos a declarar la misma variable con **let**, no se considerará la misma variable.
