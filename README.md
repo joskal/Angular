@@ -79,5 +79,10 @@ let spiderman = {
 ```
 ## Plantillas de cadena de texto (\`backtick\`)
 ```typescript
- 
+let nombre:string = "Jose";
+let apellido:string = "Garcia";
+let edad = 20;
+
+let texto = `Hola, ${ nombre } ${ apellido }. Tienes ${ edad } años`;
+console.log(texto);
 ```
