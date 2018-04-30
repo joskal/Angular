@@ -53,3 +53,31 @@ tsc -w
 
 ## let & const
 **let** es el equivalente a **var** en javascript. La diferencia está en que en **let** el alcance está dentro del bloque en que se declare la variable **{}**. Si construimos un bloque anidado y volvemos a declarar la misma variable con **let**, no se considerará la misma variable.
+
+**const** nos permitirá declarar constantes. Por convención las constantes van siempre en mayúsculas.
+
+## Tipos de datos
+En Typescript los tipos de datos pueden ser implícitos (al asignar el valor, toma el tipo) o explícito (declarar el tipo junto con el nombre de la variable **let nombre:tipo**). Se recomienda declarar las variables explícitamente.
+```typescript
+let nombre:string = "Jose";
+let numero:number = 123;
+let booleano:boolean = true;
+
+let hoy:Date = new Date()
+hoy = new Date("2018-10-10");
+
+let cualquiera:any;
+cualquiera = nombre;
+cualquiera = numero;
+cualquiera = booleano;
+cualquiera = hoy;
+
+let spiderman = {
+  nombre: "Peter",
+  edad: 20
+}
+```
+## Plantillas de cadena de texto (\`backtick\`)
+```typescript
+ 
+```
