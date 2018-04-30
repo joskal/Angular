@@ -52,4 +52,4 @@ tsc -w
 ```
 
 ## let & const
-**let variable** declara una variable a nivel de bloque **{}**. Si construimos un bloque anidado y volvemos a declarar la misma variable con **let**, no se considerará la misma variable.
+**let** es el equivalente a **var** en javascript. La diferencia está en que en **let** el alcance está dentro del bloque en que se declare la variable **{}**. Si construimos un bloque anidado y volvemos a declarar la misma variable con **let**, no se considerará la misma variable.
