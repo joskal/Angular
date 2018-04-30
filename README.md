@@ -81,7 +81,7 @@ let spiderman = {
 ```typescript
 let nombre:string = "Jose";
 let apellido:string = "Garcia";
-let edad = 20;
+let edad:number = 20;
 
 let texto = `Hola, ${ nombre } ${ apellido }. Tienes ${ edad } años`;
 console.log(texto);
