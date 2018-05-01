@@ -78,6 +78,7 @@ let spiderman = {
 }
 ```
 ## Plantillas de cadena de texto (\`backtick\`)
+Este tipo evaluará el contenido encerrado entre estos caracteres  **\`{ expresion js }\`**. Devolverá el contenido de la variable o evaluará una expresión javascript.
 ```typescript
 let nombre:string = "Jose";
 let apellido:string = "Garcia";
