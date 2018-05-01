@@ -29,7 +29,7 @@ También haremos uso del framework [ionic](https://ionicframework.com/).
 npm install -g ionic
 ```
 ## Typescript
-Typescript se encarga de compilar un archivo con la extensión **.ts** dando como resultado un archivo javascript con la extensión **.js** .
+Typescript es un superset de Javascript que añade capacidades de POO (Programación Orientada a Objetos), como son el tipado estático y las clases. Typescript se encarga de compilar un archivo con la extensión **.ts** dando como resultado un archivo javascript con la extensión **.js** .
 ```bash
 tsc app1.ts
 #resultado: app1.js
