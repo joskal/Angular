@@ -87,3 +87,9 @@ let edad:number = 20;
 let texto = `Hola, ${ nombre } ${ apellido }. Tienes ${ edad } años`;
 console.log(texto);
 ```
+
+## Funciones (parámetros)
+En typescript las funciones pueden recibir tres tipos de parámetos:
+* Obligatorio.
+* Por defecto. Si no le mandamos el parámetro tomará el valor que le indiquemos **objeto:string = "batsignal"**
+* Opcional. los opcionales van precedidos de **?**. 
