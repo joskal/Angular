@@ -93,7 +93,7 @@ En typescript las funciones pueden recibir tres tipos de parámetos:
 * Obligatorio.
 * Por defecto. Si no le mandamos el parámetro tomará el valor que le indiquemos **objeto:string = "batsignal"**
 * Opcional. El nombre va precedido de ?. **momento?:string**
-```bash
+```typescript
 // Parámetros de función
 
 function activar( quien    : string,               // Parámetro obligatorio
@@ -108,4 +108,18 @@ function activar( quien    : string,               // Parámetro obligatorio
 }
 
 activar("Gordon","batiseñal","por la tarde");
+```
+## Funciones de flecha
+Las funciones de flecha son anónimas.
+```typescript
+//Funcion anónima normal.
+let funcionNormal = function(a:string){return a;}
+
+//Funcion flecha
+let funcionFlecha = ( a:string ) => a.toUpperCase();
+
+
+console.log("Funcion Normal:" + funcionNormal("jose"));
+console.log("Funcion flecha:" + funcionFlecha("callealta"))
+
 ```
