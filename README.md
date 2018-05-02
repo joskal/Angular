@@ -92,7 +92,7 @@ console.log(texto);
 En typescript las funciones pueden recibir tres tipos de parámetos:
 * Obligatorio.
 * Por defecto. Si no le mandamos el parámetro tomará el valor que le indiquemos **objeto:string = "batsignal"**
-* Opcional. El nombre va precedido de ?. **momento:string**
+* Opcional. El nombre va precedido de ?. **momento?:string**
 ```bash
 // Parámetros de función
 
