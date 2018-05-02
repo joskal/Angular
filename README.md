@@ -92,4 +92,20 @@ console.log(texto);
 En typescript las funciones pueden recibir tres tipos de parámetos:
 * Obligatorio.
 * Por defecto. Si no le mandamos el parámetro tomará el valor que le indiquemos **objeto:string = "batsignal"**
-* Opcional. los opcionales van precedidos de **?**. 
+* Opcional. El nombre va precedido de ?. **momento:string**
+```bash
+// Parámetros de función
+
+function activar( quien    : string,               // Parámetro obligatorio
+                  objeto   : string = "batsignal", // Parámetro por defecto
+                  momento? : string                // Parámetro opcional
+                  ){
+    let mensaje:string;
+    momento? true : momento="";
+    mensaje = `${ quien } activó la ${ objeto } ${ momento }`;
+
+    console.log(mensaje);
+}
+
+activar("Gordon","batiseñal","por la tarde");
+```
