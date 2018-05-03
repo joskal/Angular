@@ -134,5 +134,5 @@ miPrimeraPromise.then((successMessage) => {
   console.log("¡Sí! " + successMessage);
 });
 ```
-
+###### [fuente: MDN Web Docs](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise)
 
