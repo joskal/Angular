@@ -79,8 +79,8 @@ function activar( quien    : string,               // Parámetro obligatorio
 
 activar("Gordon","batiseñal","por la tarde");
 ```
-## Funciones de flecha
-Las funciones de flecha son anónimas.
+## Funciones Lambda o de flecha
+Las funciones lambda son anónimas.
 ```typescript
 //Funcion anónima normal.
 let funcionNormal = function(a:string){return a;}
@@ -91,5 +91,28 @@ let funcionFlecha = ( a:string ) => a.toUpperCase();
 
 console.log("Funcion Normal:" + funcionNormal("jose"));
 console.log("Funcion flecha:" + funcionFlecha("callealta"))
+
+```
+
+## Desestructuración de objetos y arrays.
+Consiste en volcar a nombres de variables el contenido tanto de objetos como de arays.
+```typescript
+//objeto
+let avenger = {
+	nombre:"Steve",
+	clave:"Capitan_America",
+	poder:"superfuerza"
+}
+//Desestructuración de objeto
+let {nombre,clave,poder} = avenger;
+
+
+//Array
+let avengers:string[]=[ "Thor","Steve","Tony"];
+//Desestructuracion del array
+let [ thor, capi, ironman ] = avengers;
+
+console.log("Desestructuracion del objeto avenger: ", nombre,clave,poder);
+console.log("Desestructuracion del array avengers: ", thor,capi,ironman);
 
 ```
