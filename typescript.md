@@ -95,7 +95,7 @@ console.log("Funcion flecha:" + funcionFlecha("callealta"))
 ```
 
 ## Desestructuración de objetos y arrays.
-Consiste en volcar a nombres de variables el contenido tanto de objetos como de arays.
+Consiste en volcar a nombres de variables el contenido tanto de objetos como de arrays. Hay que tener en cuenta que a la hora de aplicarlo a un objeto los nombres de variables deben coincidir con los nombres de las propiedades del objeto. Con los arrays, la asignación es secuencial.
 ```typescript
 //objeto
 let avenger = {
@@ -116,3 +116,23 @@ console.log("Desestructuracion del objeto avenger: ", nombre,clave,poder);
 console.log("Desestructuracion del array avengers: ", thor,capi,ironman);
 
 ```
+
+## Promises
+El objeto Promise (Promesa) es usado para opeaciones asíncronas. Una promesa representa un valor que puede estar disponible ahora, en el futuro, o nunca.
+```typescript
+  // Llamamos a resolve(...) cuando lo que estabamos haciendo finaliza con éxito, y reject(...) cuando falla.
+  // En este ejemplo, usamos setTimeout(...) para simular código asíncrono. 
+  // En la vida real, probablemente uses algo como XHR o una API HTML5.
+
+let miPrimeraPromise = new Promise((resolve, reject) => {
+  setTimeout(function(){
+    resolve("¡Éxito!"); }, 250);
+});
+
+  // succesMessage es lo que sea que pasamos en la función resolve(...) de arriba.
+miPrimeraPromise.then((successMessage) => {
+  console.log("¡Sí! " + successMessage);
+});
+```
+
+
