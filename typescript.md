@@ -136,3 +136,28 @@ miPrimeraPromise.then((successMessage) => {
 ```
 ###### [fuente: MDN Web Docs](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise)
 
+## POO (Programación Orientada a Objetos)
+Un constructor de clase es una función que vuelca los parámetros que le indiquemos a las propiedades de la clase que definamos.
+```typescript
+// Se define la clase
+class Avenger{
+	nombre: string = "noname"; //valor por defecto
+	equipo:string;
+	nombreReal:string;
+	puedePelear:string;
+	peleasGanadas:string;
+	constructor( nombreAvenger:string, equipoAvenger:string ){
+		this.nombre=nombreAvenger;
+		this.equipo=equipoAvenger;
+	}
+}
+
+// se crea una instancia de la Clase
+let antman:Avenger=new Avenger( "antman","Justicia" );
+
+console.log(antman);
+console.log(antman.nombre);
+console.log(antman.equipo);
+console.log(antman.nombreReal);
+
+```
