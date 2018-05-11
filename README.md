@@ -13,6 +13,9 @@ La documentación la podemos encontrar [aquí](https://github.com/angular/angula
 
 Si necesitamos actualizar **Angular** debemos desinstalar primero la versión actual.
 ```bash
+npm uninstall -g angular-cli
+npm uninstall --save-dev angular-cli
+
 npm uninstall -g @angular/cli
 npm cache verify
 # if npm version is < 5 then use `npm cache clean`
