@@ -79,6 +79,16 @@ function activar( quien    : string,               // Parámetro obligatorio
 
 activar("Gordon","batiseñal","por la tarde");
 ```
+
+## Interfaces
+Una interface es una plantilla de variables declaradas con su correspondiente tipo que nos permitirá ahorrar el tener que incluirlas en los parámetros de una función, al sustituirlos por el nombre de la interface.
+```typescript
+let wolverine:Xmen {
+	
+}
+```
+
+
 ## Funciones Lambda o de flecha
 Las funciones lambda son anónimas.
 ```typescript
