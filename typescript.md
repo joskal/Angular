@@ -83,8 +83,20 @@ activar("Gordon","batiseñal","por la tarde");
 ## Interfaces
 Una interface es una plantilla de variables declaradas con su correspondiente tipo que nos permitirá ahorrar el tener que incluirlas en los parámetros de una función, al sustituirlos por el nombre de la interface.
 ```typescript
-let wolverine:Xmen {
-	
+interface iXmen{
+  nombre: string,
+  poder: string
+}
+
+let wolverine:iXmen {
+  nombre: "wolverine",
+  poder: "fuerza"
+}
+
+enviarMision(wolverine);
+
+function enviarMision(xmen:iXmen){
+  console.log("enviando a " + xmen.nombre;
 }
 ```
 
