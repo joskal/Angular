@@ -31,3 +31,5 @@ También haremos uso del framework [ionic](https://ionicframework.com/).
 ```bash
 npm install -g ionic
 ```
+
+Aparte de trabajar en local, Podemos hacer pruebas online de nuestros códigos en [Plunker](https://plnkr.co/)
