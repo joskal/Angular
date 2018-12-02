@@ -9,7 +9,11 @@ brew uninstall --ignore-dependencies node icu4c
 brew install node
 ```
 2. Instalar [typescrypt](https://www.typescriptlang.org/). Podemos hacerlo descargándola de la web oficial o bien a través del comando **npm** (Node Package Manager) con el parámetro -g (global) si hemos instalado ya el **node.js**, de la siguiente manera:
-`npm install -g typescript`. El comando `tsc -v` nos dirá qué versión de typescrypt hemos instalado.
+```bash
+npm install -g typescript
+#comprobar versión de typescript
+tsc -v
+```
 3. El siguiente paso es instalar [**Angular CLI**](https://cli.angular.io/) (Command Line Interface) mediante **npm**.
 ```bash
 npm install -g @angular/cli
