@@ -2,7 +2,12 @@
 Apuntes sobre Angular
 
 Pasos para instalarlo:
-1. Descargar e instalar node.js desde la [Web oficial](https://nodejs.org)
+1. Descargar e instalar node.js desde la [Web oficial](https://nodejs.org). Si tenemos `homebrew` instalado será mucho más sencillo:
+```bash
+# Desinstalar previamente node si nos da problemas
+brew uninstall --ignore-dependencies node icu4c
+brew install node
+```
 2. Instalar [typescrypt](https://www.typescriptlang.org/). Podemos hacerlo descargándola de la web oficial o bien a través del comando **npm** (Node Package Manager) con el parámetro -g (global) si hemos instalado ya el **node.js**, de la siguiente manera:
 `npm install -g typescript`. El comando `tsc -v` nos dirá qué versión de typescrypt hemos instalado.
 3. El siguiente paso es instalar [**Angular CLI**](https://cli.angular.io/) (Command Line Interface) mediante **npm**.
