@@ -33,3 +33,5 @@ npm install -g ionic
 ```
 
 Aparte de trabajar en local, Podemos hacer pruebas online de nuestros códigos en [Plunker](https://plnkr.co/)
+
+Toda la documentación está en la web oficial [Angular.io](https://angular.io/)
