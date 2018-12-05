@@ -40,7 +40,7 @@ ng serve -p 4201
 # Podemos hacer que también abra la app en el navegador por defecto
 ng serve -o
 ```
-Casi todo el núcleo de la programación gira en torno al directorio `[src]` donde están ubicados los componentes y las directivas estructurales.
+Casi todo el núcleo de la programación gira en torno al directorio `[src]`, que es donde está ubicada la aplicación de Angular como tal.
 ```bash
 [src]
   [app]
@@ -64,6 +64,7 @@ Casi todo el núcleo de la programación gira en torno al directorio `[src]` don
   tsconfig.spec.json
   tslint.json
 ```
+El archivo `/src/main.ts` es el primer achivo que se ejecuta en el proyecto.
 
 ## Componentes
 Los componentes son clases js con un decorador específico. Un componente es una clase que lleva a cabo una tarea concreta.
