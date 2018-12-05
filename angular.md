@@ -6,19 +6,26 @@ ng new my-app
 ```
 La estructura del proyecto que se generará es la siguiente:
 ```bash
-[.git]
-[e2e]
-[node_modules]
-[src]
+[my-app]
+  [.git]
+  [e2e]
+  [node_modules]
+  [src]
 
-.editorconfig
-.gitignore
-README.md
-angular.json
-package-lock.json
-package.json
-tsconfig.json
-tslint.json
+  .editorconfig
+  .gitignore
+  README.md
+  angular.json
+  package-lock.json
+  package.json
+  tsconfig.json
+  tslint.json
+```
+La carpeta `[node_modules]` contiene todos los elementos para controlar la aplicación en la fase de desarrollo. Podemos trasladar el
+proyecto completo a otra ubicación o dispositivo sin necesidad de esta carpeta, eliminándola, ya que se puede recontruir en base al archivo `package.json` presente en la estructura.
+```bash
+#reconstruir el directorio [node_modules]
+npm install
 ```
 
 ```bash
@@ -33,28 +40,29 @@ ng serve -p 4201
 # Podemos hacer que también abra la app en el navegador por defecto
 ng serve -o
 ```
-Casi todo el núcleo de la programación girará en torno al directorio `[src]` donde están ubicados los componentes y las directivas estructurales.
+Casi todo el núcleo de la programación gira en torno al directorio `[src]` donde están ubicados los componentes y las directivas estructurales.
 ```bash
-[app]
-  [components]
-  app.component.css
-  app.component.html
-  app.component.spec.ts
-  app.component.ts
-  app.module.ts
-[assets]
-[environments]
-browserslist
-favicon.ico
-index.html
-karma.conf.js
-main.ts
-polyfills.ts
-styles.css
-test.ts
-tsconfig.app.json
-tsconfig.spec.json
-tslint.json
+[src]
+  [app]
+    [components]
+    app.component.css
+    app.component.html
+    app.component.spec.ts
+    app.component.ts
+    app.module.ts
+  [assets]
+  [environments]
+  browserslist
+  favicon.ico
+  index.html
+  karma.conf.js
+  main.ts
+  polyfills.ts
+  styles.css
+  test.ts
+  tsconfig.app.json
+  tsconfig.spec.json
+  tslint.json
 ```
 
 ## Componentes
