@@ -21,7 +21,7 @@ La estructura del proyecto que se generará es la siguiente:
   tsconfig.json
   tslint.json
 ```
-La carpeta `[node_modules]` contiene todos los elementos para controlar la aplicación en la fase de desarrollo. Podemos trasladar el
+La carpeta `[node_modules]` contiene todos los elementos (más de mil paquetes, lo que la hace bastante pesada) para controlar la aplicación en la fase de desarrollo. Podemos trasladar el
 proyecto completo a otra ubicación o dispositivo sin necesidad de esta carpeta, eliminándola, ya que se puede recontruir en base al archivo `package.json` presente en la estructura.
 ```bash
 #reconstruir el directorio [node_modules]
