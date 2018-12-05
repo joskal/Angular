@@ -66,9 +66,7 @@ Casi todo el núcleo de la programación gira en torno al directorio `[src]`, qu
 ```
 El archivo `/src/main.ts` es el primer achivo que se ejecuta en el proyecto.
 
-## Componentes
 Los componentes son clases js con un decorador específico. Un componente es una clase que lleva a cabo una tarea concreta.
-Ejemplos de componentes podrían ser la barra de navegación, barra lateral, marco de contenido, pie de página, etc... 
+Ejemplos de componentes podrían ser la barra de navegación, barra lateral, marco de contenido, pie de página, etc... Están contenidos en la carpeta `/src/app`.
 
-## Directivas estructurales
-Son instrucciones normales que le indican a la parte del HTML qué tiene que hacer
+Las Directivas estructurales son instrucciones normales que le indican a la parte del HTML qué tiene que hacer
