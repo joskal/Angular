@@ -96,7 +96,7 @@ También debemos declarar el `HeaderComponent` dentro de la sección @NgModule
 ```js
 @NgModule({ declarations: [AppComponent, HeaderComponent ] ......
 ```
-Con lo que el fichero finalmente quedaría de la siguiente forma (Las líneas con el comentario `/*joss*/` son las que se han agregado):
+Con lo que el fichero finalmente quedaría de la siguiente forma:
 ```js
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
