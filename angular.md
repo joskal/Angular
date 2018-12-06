@@ -76,7 +76,7 @@ mkdir header
 cd header
 ```
 Dentro del directorio `src/app/components/header` crearemos el fichero `header.comoponent.ts` con el siguiente contenido:
-```bash
+```js
 import { Component } from '@angular/core';
 
 @Component({
@@ -88,7 +88,35 @@ export class HeaderComponent{
 
 }
 ```
+El siguiente paso es declarar el componente en el fichero `src/app/app.module.ts` y le agregamos las siguiente línea:
+```js
+import { HeaderComponent } from './components/header/header.component';
+```
+También debemos declarar el `HeaderComponent` dentro de la sección @NgModule
+```js
+@NgModule({ declarations: [AppComponent, HeaderComponent ] ......
+```
+Con lo que el fichero finalmente quedaría de la siguiente forma (Las líneas con el comentario `/*joss*/` son las que se han agregado):
+```js
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component'; /*joss*/
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent /*joss*/
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
 
 
