@@ -44,7 +44,6 @@ Casi todo el núcleo de la programación gira en torno al directorio `[src]`, qu
 ```bash
 [src]
   [app]
-    [components]
     app.component.css
     app.component.html
     app.component.spec.ts
@@ -66,7 +65,32 @@ Casi todo el núcleo de la programación gira en torno al directorio `[src]`, qu
 ```
 El archivo `/src/main.ts` es el primer achivo que se ejecuta en el proyecto.
 
+## Componentes
 Los componentes son clases js con un decorador específico. Un componente es una clase que lleva a cabo una tarea concreta.
-Ejemplos de componentes podrían ser la barra de navegación, barra lateral, marco de contenido, pie de página, etc... Están contenidos en la carpeta `/src/app`.
+Ejemplos de componentes podrían ser la barra de navegación, barra lateral, marco de contenido, pie de página, etc... Están contenidos en la carpeta `/src/app`. Vamos a crear un componente:
+```bash
+# Dentro del directorio src/app crear el dir components/header
+mkdir components
+cd components
+mkdir header
+cd header
+```
+Dentro del directorio `src/app/components/header` crearemos el fichero `header.comoponent.ts` con el siguiente contenido:
+```bash
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-header',
+    template: `<h1>Header component</h1>`
+})
+
+export class HeaderComponent{
+
+}
+```
+
+
+
+
 
 Las Directivas estructurales son instrucciones normales que le indican a la parte del HTML qué tiene que hacer
