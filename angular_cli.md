@@ -1,4 +1,4 @@
-# Angular
+# Angular CLI
 La forma más eficiente de desarrollar en Angular es trabajando en la terminal, con [Angular CLI](https://cli.angular.io/) (Command Line Interface)
 ```bash
 #Crear un nuevo proyecto
@@ -75,7 +75,7 @@ cd components
 mkdir header
 cd header
 ```
-Dentro del directorio `src/app/components/header` crearemos el fichero `header.comoponent.ts` con el siguiente contenido:
+Dentro del directorio `src/app/components/header` crearemos el fichero `header.component.ts` con el siguiente contenido:
 ```js
 import { Component } from '@angular/core';
 
@@ -117,7 +117,15 @@ import { HeaderComponent } from './components/header/header.component';
 })
 export class AppModule { }
 ```
-
+Ya sólo queda que visualicemos el nuevo componente en el navegador. Para ello debemos editar el fichero `src/app/app.component.html` y agregarle el nombre del selector `app-header` que definimos en el fichero `header.component.ts`.
+```html
+<app-header></app-header>
+<h2>Hola mundo</h2>
+<ul>
+  <li>Nombre: {{ nombre }}</li>
+  <li>Apellidos: {{ apellido }}</li>
+</ul>
+```
 
 
 
