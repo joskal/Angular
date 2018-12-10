@@ -66,7 +66,7 @@ Casi todo el núcleo de la programación gira en torno al directorio `[src]`, qu
 El archivo `/src/main.ts` es el primer achivo que se ejecuta en el proyecto.
 
 ## Componentes
-Los componentes son clases js con un decorador específico. Un componente es una clase que lleva a cabo una tarea concreta.
+Los componentes son clases js con un decorador específico, que llevan a cabo una tarea concreta.
 Ejemplos de componentes podrían ser la barra de navegación, barra lateral, marco de contenido, pie de página, etc... Están contenidos en la carpeta `/src/app`. Vamos a crear un componente:
 ```bash
 # Dentro del directorio src/app crear el dir components/header
